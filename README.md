@@ -1,7 +1,7 @@
 # MyReads Project
 
 
-thanks fro the project .it was pretty good learning curve for me.
+Thanks for the project .It was pretty good learning curve for me.
 must try project.
 
 implementation by me=============================
