@@ -5,13 +5,11 @@ import {Link} from 'react-router-dom' ;
 class MainPage extends Component{
 
     render(){
-        //console.log(this.props.books);
+        console.log(this.props.books);
         return(
-
             <div className="list-books">
             <div className="list-books-title">
-            
-            <h1>MyReads</h1>
+               <h1>MyReads</h1>
             </div>
             <div className="list-books-content">
               <div>
@@ -19,22 +17,16 @@ class MainPage extends Component{
                   <h2 className="bookshelf-title"> Reading</h2>
                   <div className="bookshelf-books">
                     <ol className="books-grid">
-
                     { 
-                        this.props.books
-                        .filter(book=> book.shelf===
-                        'currentlyReading')
-                        .map(book=>(
-                        <li key={book.id }>
+                        this.props.books.filter(book=> book.shelf==='currentlyReading').map(book=>(
+                          <li key={book.id }>
                             <Book 
-                            book={book}
-                            moveShelf={this.props.moveShelf}
+                              book={book}
+                              moveShelf={this.props.moveShelf}
                             />
-                        </li>
+                         </li>
                         ))
-                        }
-                      
-                     
+                    }                  
                     </ol>
                   </div>
                 </div>
